@@ -2,6 +2,7 @@ import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:ui1/consts/add_space.dart';
 import 'package:ui1/consts/colors.dart';
+import 'package:ui1/consts/padding_skills.dart';
 import 'package:ui1/utils/category_cards.dart';
 import 'package:ui1/utils/custom_text.dart';
 import 'package:ui1/utils/pet_cards.dart';
@@ -39,7 +40,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             Padding(
               padding:
-                  const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),
+                  symetricH8V10,
               child: Row(
                 children: [
                   // pp
@@ -71,7 +72,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              padding: symetricH8,
               child: TextField(
                 controller: _searchController,
                 decoration: InputDecoration(
@@ -98,7 +99,7 @@ class _HomePageState extends State<HomePage> {
             ),
             // pet category text
             Padding(
-              padding: const EdgeInsets.only(left: 10.0),
+              padding: onlyLeft8,
               child: CustomText(
                 text: 'Pet Category',
                 color: baseTextColor,
